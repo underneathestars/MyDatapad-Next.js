@@ -1,0 +1,29 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.wrapper {
+  width: 200px;
+  @include flex(row, flex-start);
+
+  form {
+    @include flex(column, center, center, 10px);
+    font-family: $gemunu;
+    color: $primary_color;
+    letter-spacing: 3px;
+    font-size: 22px;
+    width: 200px;
+    padding: 25px 10px;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.45);
+    border-radius: 6px;
+    border: 1px solid $primary_color;
+    background-color: rgba(255, 255, 255, 0.04);
+    
+  }
+
+  input {
+    font-family: $gemunu;
+    font-size: 16px;
+    letter-spacing: 2px;
+    
+  }
+}
